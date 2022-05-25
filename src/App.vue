@@ -16,7 +16,7 @@ const {totalProducts} = useCart()
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/loginView" v-if="!loginIn">Login</RouterLink>
-        <RouterLink to="/cart">My Cart{{totalProducts}}</RouterLink>
+        <RouterLink to="/cart">My Cart({{totalProducts}})</RouterLink>
         <RouterLink to="/loginView" v-if="loginIn" @click="logout"
           >Logout ({{ user.username }})</RouterLink>
           <RouterLink to="/product">product</RouterLink>
